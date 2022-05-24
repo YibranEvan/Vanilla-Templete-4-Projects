@@ -364,9 +364,9 @@ public class Exercises {
         39. There are 100 cupcakes for 8 children to share. How much will each
         person get if they share the cupcakes equally?
         */
-		int numberOfCupcakes = 100;
-		int numberOfKids = 8;
-		double cupcakesGivenEqually = (double) (numberOfCupcakes / numberOfKids);
+		double numberOfCupcakes = 100;
+		double numberOfKids = 8;
+		double cupcakesGivenEqually = numberOfCupcakes /  numberOfKids;
 
 
 
@@ -375,6 +375,11 @@ public class Exercises {
         tiny glass jars. If each jar is to contain six cookies, how many
         cookies will not be placed in a jar?
         */
+		int gingerbreadTotal = 47;
+		int cookiesInEachJar = 6;
+		int cookiesNotInJar = gingerbreadTotal % cookiesInEachJar;
+
+
 
 
 
@@ -384,6 +389,9 @@ public class Exercises {
         neighbors. If each neighbor received an equal number of croissants,
         how many will be left with Marian?
         */
+		int numberOfCroissants = 59;
+		int numberOfNeighbors = 8;
+		int croissantsLeft = numberOfCroissants % numberOfNeighbors;
 
 
 
@@ -393,6 +401,7 @@ public class Exercises {
         place 12 cookies on a tray at a time, how many trays will she need to
         prepare 276 oatmeal cookies at a time?
         */
+		int 
 
 
 
