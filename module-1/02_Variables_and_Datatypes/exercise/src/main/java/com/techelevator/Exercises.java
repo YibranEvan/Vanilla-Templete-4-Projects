@@ -52,30 +52,46 @@ public class Exercises {
         6. 3 owls were sitting on the fence. 2 more owls joined them. How many
         owls are on the fence now?
         */
+		int numberOfOwls = 3;
+		int numberOfOwlsJoining = 2;
+		int numberOfOwlsTotal = numberOfOwls + numberOfOwlsJoining;
 
 
         /* Exercise 7
         7. 2 beavers were working on their home. 1 went for a swim. How many
         beavers are still working on their home?
         */
+		int numberOfBeavers = 2;
+		int numberOfBeaversSwimming = 1;
+		int numberOfBeaversLeft = numberOfBeavers - numberOfBeaversSwimming;
 
 
         /* Exercise 8
         8. 2 toucans are sitting on a tree limb. 1 more toucan joins them. How
         many toucans in all?
         */
+		int numbersOfToucans = 2;
+		int numberOfToucansJoining = 1;
+		int numberOfToucansLeft = numbersOfToucans + numberOfToucansJoining;
 
 
         /* Exercise 9
         9. There are 4 squirrels in a tree with 2 nuts. How many more squirrels
         are there than nuts?
         */
+		int numberOfSquirrels = 4;
+		int numberOfNuts = 2;
+		int numberOfSquirrelsMoreThanNuts = numberOfSquirrels - numberOfNuts;
 
 
         /* Exercise 10
         10. Mrs. Hilt found a quarter, 1 dime, and 2 nickels. How much money did
         she find?
         */
+		double oneQuarter = 0.25;
+		double oneDime = 0.10;
+		double twoNickels = 0.10;
+		double valueOfMoney = oneQuarter + oneDime + twoNickels;
 
 
         /* Exercise 11
