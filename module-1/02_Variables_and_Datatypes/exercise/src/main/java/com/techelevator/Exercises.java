@@ -366,7 +366,7 @@ public class Exercises {
         */
 		int numberOfCupcakes = 100;
 		int numberOfKids = 8;
-		int cupcakesGivenEqually = (numberOfCupcakes / numberOfKids);
+		double cupcakesGivenEqually = (double) (numberOfCupcakes / numberOfKids);
 
 
 
@@ -378,11 +378,13 @@ public class Exercises {
 
 
 
+
         /* Exercise 41
         41. She also prepared 59 croissants which she plans to give to her 8
         neighbors. If each neighbor received an equal number of croissants,
         how many will be left with Marian?
         */
+
 
 
 
