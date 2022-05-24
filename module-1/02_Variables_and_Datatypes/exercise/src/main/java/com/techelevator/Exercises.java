@@ -193,6 +193,9 @@ public class Exercises {
         21. Mrs. Hilt bought an ice cream cone for 99 cents. How much would 2 ice
         cream cones cost?
         */
+		double priceOfIceCream = 0.99;
+		double numberOfIceCream = 2;
+		double totalCost = priceOfIceCream * numberOfIceCream;
 
 
         /* Exercise 22
@@ -200,18 +203,27 @@ public class Exercises {
         rocks to complete the border. She has 64 rocks. How many more rocks
         does she need to complete the border?
         */
+		int totalNumberOfRocksNeeded = 125;
+		int numberOfRocks = 64;
+		int numberOfRocksNeeded = totalNumberOfRocksNeeded - numberOfRocks;
 
 
         /* Exercise 23
         23. Mrs. Hilt had 38 marbles. She lost 15 of them. How many marbles does
         she have left?
         */
+		int numberOfHiltsMarbles = 38;
+		int marblesLost = 15;
+		int totalAmountLeft = numberOfHiltsMarbles - marblesLost;
 
 
         /* Exercise 24
         24. Mrs. Hilt and her sister drove to a concert 78 miles away. They drove 32
         miles and then stopped for gas. How many miles did they have left to drive?
         */
+		int totalMilesToConcert = 78;
+		int milesAlreadyDriven = 32;
+		int milesLeft = totalMilesToConcert - milesAlreadyDriven;
 
 
         /* Exercise 25
@@ -219,6 +231,9 @@ public class Exercises {
         morning and 45 minutes shoveling snow on Saturday afternoon. How
         much total time (in minutes) did she spend shoveling snow?
         */
+		int minutesSpentOnMorning = 90;
+		int minutesSpentOnAfternoon = 45;
+		int totalMinutesShoveling = minutesSpentOnMorning + minutesSpentOnAfternoon;
 
 
         /* Exercise 26
