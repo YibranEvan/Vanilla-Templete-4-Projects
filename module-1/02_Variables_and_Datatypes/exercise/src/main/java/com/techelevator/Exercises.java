@@ -240,12 +240,18 @@ public class Exercises {
         26. Mrs. Hilt bought 6 hot dogs. Each hot dog cost 50 cents. How much
         money did she pay for all of the hot dogs?
         */
+		double numberOfHotDogs = 6;
+		double priceOfHotDog = 0.50;
+		double totalPayed = numberOfHotDogs * priceOfHotDog;
 
 
         /* Exercise 27
         27. Mrs. Hilt has 50 cents. A pencil costs 7 cents. How many pencils can
         she buy with the money she has?
         */
+		double hiltsMoney = 0.50;
+		double priceOfPencil = 0.07;
+		int numberOfPencilsCanBuy= hiltsMoney / priceOfPencil;
 
 
         /* Exercise 28
@@ -253,12 +259,18 @@ public class Exercises {
         were orange. If 20 of the butterflies were orange, how many of them
         were red?
         */
+		int numberOfButterflies = 33;
+		int numberOfOrangeButterflies = 20;
+		int numberOfRedButterflies = numberOfButterflies - numberOfOrangeButterflies;
 
 
         /* Exercise 29
         29. Kate gave the clerk $1.00. Her candy cost 54 cents. How much change
         should Kate get back?
         */
+		double moneyGivenToClerk = 1.00;
+		double costOfCandy = 0.54;
+		double changeGivenBack = moneyGivenToClerk - costOfCandy
 
 
         /* Exercise 30
