@@ -167,18 +167,26 @@ public class Exercises {
         18. Brad has 17 balloons. 8 balloons are red and the rest are green. How
         many green balloons does Brad have?
         */
-		
+		int numberOfBradsBalloons = 17;
+		int numberOfRedBalloons = 8;
+		int numberOfGreenBallons = numberOfBradsBalloons - numberOfRedBalloons;
 
 
         /* Exercise 19
         19. There are 38 books on the shelf. Marta put 10 more books on the shelf.
         How many books are on the shelf now?
         */
+		int initialNumberOfBooks = 38;
+		int numberOfBooksAdded = 10;
+		int totalNumberOfBooks = initialNumberOfBooks + numberOfBooksAdded;
 
 
         /* Exercise 20
         20. A bee has 6 legs. How many legs do 8 bees have?
         */
+		int numberOfBeesLegs = 6;
+		int numberOfBeesTotal = 8;
+		int totalNumberOfLegs = numberOfBeesLegs * numberOfBeesTotal;
 
 
         /* Exercise 21
