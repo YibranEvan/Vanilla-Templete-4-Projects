@@ -304,7 +304,9 @@ public class Exercises {
         33. Dan has $3.00. He bought a candy bar for $1.00. How much money is
         left?
         */
-		
+		double dansFund = 3.00;
+		double valueOfCandy = 1.00;
+		double moneyLeft = dansFund - valueOfCandy;
 
 
 
@@ -312,6 +314,9 @@ public class Exercises {
         34. 5 boats are in the lake. Each boat has 3 people. How many people are
         on boats in the lake?
         */
+		int numberBoats = 5;
+		int numberPeople = 3;
+		int totalNumberPeople = numberBoats * numberPeople;
 
 
 
@@ -319,6 +324,9 @@ public class Exercises {
         35. Ellen had 380 legos, but she lost 57 of them. How many legos does she
         have now?
         */
+		int ellensLegos = 380;
+		int legosLost = 57;
+		int legosLeft = ellensLegos - legosLost;
 
 
 
@@ -326,6 +334,9 @@ public class Exercises {
         36. Arthur baked 35 muffins. How many more muffins does Arthur have to
         bake to have 83 muffins?
         */
+		int arthurMuffins = 35;
+		int totalMuffins = 83;
+		int muffinsNeeded = totalMuffins - arthurMuffins;
 
 
 
@@ -333,6 +344,9 @@ public class Exercises {
         37. Willy has 1400 crayons. Lucy has 290 crayons. How many more
         crayons does Willy have then Lucy?
         */
+		int willyCrayons = 1400;
+		int lucyCrayons = 290;
+		int differenceOfCrayons = willyCrayons - lucyCrayons;
 
 
 
@@ -340,6 +354,9 @@ public class Exercises {
         38. There are 10 stickers on a page. If you have 22 pages of stickers, how
         many stickers do you have?
         */
+		int numbersOfStickers = 10;
+		int numberOfPages = 22;
+		int totalNumberOfStickers = numbersOfStickers * numberOfPages;
 
 
 
@@ -347,6 +364,9 @@ public class Exercises {
         39. There are 100 cupcakes for 8 children to share. How much will each
         person get if they share the cupcakes equally?
         */
+		int numberOfCupcakes = 100;
+		int numberOfKids = 8;
+		int cupcakesGivenEqually = (numberOfCupcakes / numberOfKids);
 
 
 
