@@ -10,7 +10,7 @@ public class Exercises {
 	 sleepIn(false, true) → true
 	 */
 	public boolean sleepIn(boolean weekday, boolean vacation) {
-		if(weekday == true && vacation == false) {
+		if (weekday == true && vacation == false) {
 			return false;
 		} else {
 			return true;
@@ -27,8 +27,11 @@ public class Exercises {
 	 monkeyTrouble(true, false) → false
 	 */
 	public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
-		if (aSmile == true && bSmile == true)
-		return false;
+		if ((aSmile == true && bSmile == true) || (aSmile == false && bSmile == false)) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/*
@@ -38,8 +41,19 @@ public class Exercises {
 	 sumDouble(2, 2) → 8
 	 */
 	public int sumDouble(int a, int b) {
-		return 0;
+		if (a == b) {
+			return 2 * (a + b);
+		} else {
+			return a + b;
+		}
 	}
+
+
+//		} else if (!(a == b)) {
+//			return a + b;
+//		}
+//		return a;
+//	}
 
 	/*
 	 4. Given an int n, return the absolute difference between n and 21, except return double the absolute
