@@ -446,6 +446,9 @@ public class Exercises {
         them on the shelves in their bedroom. If every shelf can carry a
         maximum of 7 teddy bears, how many shelves will be filled?
         */
+		int totalTeddy = 98;
+		int spaceForShelf = 7;
+		int shelvesFilled = totalTeddy / spaceForShelf;
 
 
 
@@ -454,6 +457,9 @@ public class Exercises {
         them in an album. If an album can contain 20 pictures, how many
         albums will she need if there are 480 pictures?
         */
+		int albumsContains = 20;
+		int totalPictures = 480;
+		int albumsTotal = totalPictures / albumsContains;
 
 
 
@@ -463,6 +469,9 @@ public class Exercises {
         cards, how many boxes were filled and how many cards are there in
         the unfilled box?
         */
+		int totalCards = 94;
+		int boxMaxOfCards = 8;
+		int filledBoxes = (totalCards % boxMaxOfCards);
 
 
 
@@ -471,6 +480,9 @@ public class Exercises {
         210 books to be distributed equally on the 10 shelves he repaired,
         how many books will each shelf contain?
         */
+		int totalBooks = 210;
+		int spaceShelves = 10;
+		int booksOnEachShelve = totalBooks / spaceShelves;
 
 
 
@@ -478,6 +490,9 @@ public class Exercises {
         50. Cristina baked 17 croissants. If she planned to serve this equally to
         her seven guests, how many will each have?
         */
+		double totalCroissants = 17;
+		double numberGuests = 7;
+		double eachGiven = totalCroissants / numberGuests;
 
 
 
