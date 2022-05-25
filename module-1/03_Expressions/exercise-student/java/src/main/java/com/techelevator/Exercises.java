@@ -81,8 +81,11 @@ public class Exercises {
 	 parrotTrouble(false, 6) → false
 	 */
 	public boolean parrotTrouble(boolean talking, int hour) {
-	if ((talking == true && hour )
-		return false;
+	if ((talking == true) && (hour<7 || hour >20)) {
+			return true;
+		} else{
+			return false;
+		}
 	}
 
 	/*
