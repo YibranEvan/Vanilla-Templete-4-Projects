@@ -401,7 +401,9 @@ public class Exercises {
         place 12 cookies on a tray at a time, how many trays will she need to
         prepare 276 oatmeal cookies at a time?
         */
-		int 
+		int cookiesOnTray = 12;
+		int totalCookies = 276;
+		int totalTrays = totalCookies / cookiesOnTray;
 
 
 
@@ -410,6 +412,9 @@ public class Exercises {
         bite-sized pretzels. If one serving is equal to 12 pretzels, how many
         servings of bite-sized pretzels was Marian able to prepare?
         */
+		int numberPretzels = 480;
+		int oneServing = 12;
+		int totalServings = numberPretzels / oneServing;
 
 
 
@@ -418,6 +423,10 @@ public class Exercises {
         orphanage. If two lemon cupcakes were left at home, how many
         boxes with 3 lemon cupcakes each were given away?
         */
+		int totalCupcakes = 53;
+		int leftAtHome = 2;
+		int boxesOfThree= 3;
+		int cupcakesGivenAway = (totalCupcakes - leftAtHome) / boxesOfThree;
 
 
 
@@ -426,6 +435,9 @@ public class Exercises {
         were served equally to 12 people, how many carrot sticks were left
         uneaten?
         */
+		int totalCarrots = 74;
+		int perServing = 12;
+		int carrotsLeft = totalCarrots % perServing;
 
 
 
