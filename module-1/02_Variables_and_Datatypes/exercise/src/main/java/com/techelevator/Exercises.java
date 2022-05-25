@@ -527,7 +527,7 @@ public class Exercises {
 	    */
 		Float distanceOfTwoCities = 800f;
 		Float trainTraveled = 537f;
-		int percentageTraveled = (int)(trainTraveled / distanceOfTwoCities) *100;
+		int percentageTraveled = (int)(trainTraveled / distanceOfTwoCities * 100);
 
 
 	}
