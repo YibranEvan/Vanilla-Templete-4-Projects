@@ -110,8 +110,11 @@ public class Exercises {
 	 posNeg(-4, -5, true) → true
 	 */
 	public boolean posNeg(int a, int b, boolean negative) {
-		if (a==)
-		return false;
+		if (a >= 1 && b<=-1 && !negative || a <= -1 && b >= 1 && !negative || a <= -1 && b<= -1 && negative) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/*
