@@ -501,6 +501,10 @@ public class Exercises {
 	    1.90 hours. How long will it take the two painters working together to paint 5 12 x 14 rooms?
 	    Hint: Calculate the hourly rate for each painter, combine them, and then divide the total walls in feet by the combined hourly rate of the painters.
 	    */
+		double numberOfRooms = 5;
+		double billHours = 1 / 2.15;
+		double jillHours = 1 / 1.90;
+		double numberOfHours = numberOfRooms / (billHours+ jillHours);
 
 
 
@@ -511,6 +515,7 @@ public class Exercises {
 		with a period. Use "Grace", "Hopper, and "B" for the first name, last name, and middle initial.
 		Example: "John", "Smith, "D" —> "Smith, John D."
 	    */
+		
 
 
 
