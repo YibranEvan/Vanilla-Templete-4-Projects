@@ -380,8 +380,11 @@ public class Exercises {
 	 sortaSum(10, 11) → 21
 	 */
 		public int sortaSum(int a, int b) {
-			
-			return 0;
+			int sum = a +b;
+			if (sum >=10 && sum <=19) {
+				return 20;
+			}
+			return sum;
 		}
 
 	/*
@@ -501,7 +504,7 @@ public class Exercises {
 		}
 
 	/*
-	 31. Given three ints, a b c, return true if it is possible to add two of the ints to get the third.
+	 31. Given three ints, a b c, return true if it is possible to add or subtract two of the ints to get the third.
 	 twoAsOne(1, 2, 3) → true
 	 twoAsOne(3, 1, 2) → true
 	 twoAsOne(3, 2, 2) → false
