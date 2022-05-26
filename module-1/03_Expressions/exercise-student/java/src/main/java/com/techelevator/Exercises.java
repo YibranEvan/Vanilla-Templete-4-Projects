@@ -199,7 +199,12 @@ public class Exercises {
 	 intMax(3, 2, 1) → 3
 	 */
 	public int intMax(int a, int b, int c) {
-		return 0;
+		if ((a >= b) && (a >= c)) {
+			return a;
+		} else if ((b >= c) && (b >= a)) {
+			return b;
+		}
+		return c;
 	}
 
 	/*
