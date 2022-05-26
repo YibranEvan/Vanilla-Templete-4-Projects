@@ -349,9 +349,29 @@ public class Exercises {
      yourCakeAndEatItToo(11.00, false) → "special"
      */
 		public String yourCakeAndEatItToo(double mealAmount, boolean isBirthday) {
-			return "";
-		}
+			if (isBirthday == true && mealAmount >= 10.01) {
+				return "ginormous";
+			}
 
+			if (isBirthday == true && mealAmount >= 5.01) {
+				return "special";
+			}
+
+			if (isBirthday == true && mealAmount < 5.00) {
+				return "standard";
+			}
+
+			if (isBirthday == false && mealAmount <= 10) {
+				return "standard";
+			}
+
+			if (isBirthday == false && mealAmount <= 15) {
+				return "special";
+			}
+			else {
+				return "ginormous";
+			}
+		}
 	/*
 	 20. Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, are forbidden,
 	 so in that case just return 20.
@@ -360,6 +380,7 @@ public class Exercises {
 	 sortaSum(10, 11) → 21
 	 */
 		public int sortaSum(int a, int b) {
+			
 			return 0;
 		}
 
