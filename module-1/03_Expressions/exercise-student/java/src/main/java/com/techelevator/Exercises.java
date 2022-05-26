@@ -215,6 +215,11 @@ public class Exercises {
 	 in3050(40, 50) → true
 	 */
 	public boolean in3050(int a, int b) {
+		if ((a >= 30 && a <= 40) && (b >= 30 && b<=40)) {
+			return true;
+	} else if ((a >= 40 && a <= 50) && (b >= 40 && b<=50)) {
+			return true;
+		}
 		return false;
 	}
 
@@ -226,6 +231,7 @@ public class Exercises {
 	 max1020(11, 9) → 11
 	 */
 	public int max1020(int a, int b) {
+		if ( )
 		return 0;
 	}
 
