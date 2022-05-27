@@ -589,6 +589,15 @@ public class Exercises {
 	 twoAsOne(3, 2, 2) → false
 	 */
 		public boolean twoAsOne(int a, int b, int c) {
+			if (a + b == c) {
+				return true;
+			} else if (a-b == c) {
+				return true;
+			} else if (b+a == c) {
+				return true;
+			} else if (b-a == c) {
+				return true;
+			}
 			return false;
 		}
 
@@ -600,6 +609,11 @@ public class Exercises {
 	 inOrder(1, 1, 2, true) → true
 	 */
 		public boolean inOrder(int a, int b, int c, boolean bOk) {
+			if (c > b && bOk == true) {
+				return true;
+			} else if (( a < b) && (c > b)) {
+				return true;
+			}
 			return false;
 		}
 
