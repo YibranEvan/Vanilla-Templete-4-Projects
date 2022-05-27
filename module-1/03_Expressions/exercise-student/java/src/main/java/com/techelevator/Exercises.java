@@ -302,7 +302,7 @@ public class Exercises {
 //			return yes;
 //		}
 //		return maybe;
-//}
+//	}
 
 
 
@@ -544,8 +544,19 @@ public class Exercises {
 	 answerCell(true, false, false) → false
 	 */
 		public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+			if (isMorning == true && isMom == true && isAsleep == false) {
+				return true;
+			}
+			if (isMorning == false && isMom == false && isAsleep == false) {
+				return true;
+			}
+			if (isMorning == false && isMom == true && isAsleep == false) {
+				return true;
+			} else if (isAsleep == true) {
+				return false;
+			}
 			return false;
-		}
+			}
 
 	/*
 	 30. We are having a party with amounts of tea and candy. Return the int outcome of the party encoded as
@@ -557,8 +568,19 @@ public class Exercises {
 	 teaParty(20, 6) → 2
 	 */
 		public int teaParty(int tea, int candy) {
-			return 0;
-		}
+			int bad = 0;
+			int good = 1;
+			int great = 2;
+
+			if (tea < 5 || candy < 5) {
+				return bad;
+			} else if (tea / candy >= 2 || candy / tea >= 2) {
+				return great;
+			}
+			return good;
+			}
+
+
 
 	/*
 	 31. Given three ints, a b c, return true if it is possible to add or subtract two of the ints to get the third.
