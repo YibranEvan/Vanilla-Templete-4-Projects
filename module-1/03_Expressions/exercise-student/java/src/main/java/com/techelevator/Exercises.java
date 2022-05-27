@@ -496,7 +496,11 @@ public class Exercises {
 	 less20(20) → false
 	 */
 		public boolean less20(int n) {
-			return false;
+			if ((n%20==18) || (n%20==19))
+				return true;
+			else {
+				return false;
+			}
 		}
 
 	/*
