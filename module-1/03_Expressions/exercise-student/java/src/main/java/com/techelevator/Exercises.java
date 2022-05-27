@@ -665,8 +665,9 @@ public class Exercises {
 	 luckySum(13, 13, 3) → 0
 	 */
 		public int luckySum(int a, int b, int c) {
-			return 0;
-		}
+			if (a+b+c) {
+			return 6;
+		} else if ( ) {
 
 	}
 
