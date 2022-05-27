@@ -448,6 +448,9 @@ public class Exercises {
 	 specialEleven(24) → false
 	 */
 		public boolean specialEleven(int n) {
+			if (n%11==0 || n%11==0+1){
+				return true;
+			}
 			return false;
 		}
 
@@ -459,8 +462,12 @@ public class Exercises {
 	 more20(22) → true
 	 */
 		public boolean more20(int n) {
+			if (n % 20 == 0 + 1 || n % 20 == 0 + 2) {
+				return true;
+			}
 			return false;
 		}
+
 
 	/*
 	 25. Return true if the given non-negative number is a multiple of 3 or 5, but not both.
@@ -470,6 +477,13 @@ public class Exercises {
 	 old35(15) → false
 	 */
 		public boolean old35(int n) {
+			if (n % 3 == 0 && !(n % 5 == 0)) {
+				return true;
+			} else if (n % 5 == 0 && !(n % 3 == 0)) {
+				return true;
+			} else if (n % 3 == 0 && n % 5 == 0) {
+				return false;
+			}
 			return false;
 		}
 
