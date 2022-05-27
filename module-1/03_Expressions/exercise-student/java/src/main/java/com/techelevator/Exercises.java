@@ -642,8 +642,17 @@ public class Exercises {
 	 loneSum(3, 3, 3) → 0
 	 */
 		public int loneSum(int a, int b, int c) {
+			if (a==b && b==c) {
 			return 0;
-		}
+		} else if ( b==c) {
+				return a;
+			} else if (a==c) {
+				return b;
+			} else if (a==b) {
+				return c;
+			}
+			return(a+b+c);
+			}
 
 	/*
 	 35. Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not
