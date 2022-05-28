@@ -24,7 +24,15 @@ public class Exercise04_HotelReservation {
     calculateStayTotal(3) ➔ 269.97
      */
     public double calculateStayTotal(int numberOfNights) {
-        return 0;
+        double stayTotal;
+
+        if (numberOfNights >= MINIMUM_NIGHTS_FOR_DISCOUNT_RATE) {
+            stayTotal = numberOfNights * DISCOUNT_RATE;
+        } else {
+            stayTotal = numberOfNights * DAILY_RATE;
+        }
+
+        return stayTotal;
     }
 
     /*
@@ -42,8 +50,18 @@ public class Exercise04_HotelReservation {
     calculateStayTotal(3, 2) ➔ 289.97
      */
     public double calculateStayTotal(int numOfTotalNights, int numOfWeekendNights) {
-        return 0;
+        double stayTotal;
+
+        if (numOfTotalNights >= MINIMUM_NIGHTS_FOR_DISCOUNT_RATE) {
+            stayTotal = (numOfTotalNights - numOfWeekendNights) * DISCOUNT_RATE;
+            stayTotal += numOfWeekendNights * DAILY_RATE;
+        } else {
+            stayTotal = numOfTotalNights * DAILY_RATE;
+        }
+
+        return stayTotal;
     }
+
 
     /*
     Innovator's Inn continues to grow in popularity and now offers a rewards program to its customers.
@@ -60,6 +78,19 @@ public class Exercise04_HotelReservation {
     calculateStayTotal(3, 1, true) ➔ 269.97
      */
     public double calculateStayTotal(int numOfTotalNights, int numOfWeekendNights, boolean isRewardsMember) {
-        return 0;
+        double stayTotal;
+
+        if (isRewardsMember) {
+            stayTotal = numOfTotalNights * DISCOUNT_RATE;
+        }
+        else if (numOfTotalNights >= MINIMUM_NIGHTS_FOR_DISCOUNT_RATE) {
+            stayTotal = (numOfTotalNights - numOfWeekendNights) * DISCOUNT_RATE;
+            stayTotal += numOfWeekendNights * DAILY_RATE;
+        } else {
+            stayTotal = numOfTotalNights * DAILY_RATE;
+        }
+
+        return stayTotal;
     }
 }
+

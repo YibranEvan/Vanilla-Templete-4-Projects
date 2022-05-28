@@ -24,7 +24,16 @@ public class Exercise06_ElectricBill {
     calculateElectricBill(110) ➔ 22.5
      */
     public double calculateElectricBill(double unitsUsed) {
-        return 0;
+        double total;
+
+        if (unitsUsed <= EXCESS_UNITS_LIMIT) {
+            total = unitsUsed * BASE_RATE;
+        } else {
+            double overage = unitsUsed - EXCESS_UNITS_LIMIT;
+            total = (overage * EXCESS_RATE) + (BASE_RATE * EXCESS_UNITS_LIMIT);
+        }
+
+        return total;
     }
 
     /*
@@ -39,7 +48,20 @@ public class Exercise06_ElectricBill {
     calculateElectricBill(110, true) ➔ 21.375
      */
     public double calculateElectricBill(double unitsUsed, boolean hasRenewableEnergy) {
-        return 0;
+        double total;
+
+        if (unitsUsed <= EXCESS_UNITS_LIMIT) {
+            total = unitsUsed * BASE_RATE;
+        } else {
+            double overage = unitsUsed - EXCESS_UNITS_LIMIT;
+            total = (overage * EXCESS_RATE) + (BASE_RATE * EXCESS_UNITS_LIMIT);
+        }
+
+        if (hasRenewableEnergy) {
+            total = total * DISCOUNT_FACTOR;
+        }
+
+        return total;
     }
 
     /*
@@ -63,6 +85,20 @@ public class Exercise06_ElectricBill {
     calculateElectricBill(110, 120) ➔ -2.0
      */
     public double calculateElectricBill(double unitsUsed, double unitsReturned) {
-        return 0;
+        double total;
+        double deltaUnits = unitsUsed - unitsReturned;
+
+        if (deltaUnits <= EXCESS_UNITS_LIMIT) {
+            total = deltaUnits * BASE_RATE;
+        } else {
+            double overage = deltaUnits - EXCESS_UNITS_LIMIT;
+            total = (overage * EXCESS_RATE) + (BASE_RATE * EXCESS_UNITS_LIMIT);
+        }
+
+        if (unitsReturned > 0 && total > 0) {
+            total = total * DISCOUNT_FACTOR;
+        }
+        return total;
     }
 }
+

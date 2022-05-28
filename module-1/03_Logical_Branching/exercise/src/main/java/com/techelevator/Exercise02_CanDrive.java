@@ -21,7 +21,7 @@ public class Exercise02_CanDrive {
     canDrive(false, false) ➔ false
      */
     public boolean canDrive(boolean hasPermit, boolean withLicensedPassenger) {
-        return false;
+        return hasPermit && withLicensedPassenger;
     }
 
     /*
@@ -34,9 +34,8 @@ public class Exercise02_CanDrive {
     canDrive(false, true, 23) ➔ false
      */
     public boolean canDrive(boolean hasPermit, boolean withLicensedPassenger, int passengerAge) {
-        return false;
+        return (hasPermit && withLicensedPassenger && passengerAge >= 21);
     }
-
     /*
     If the licensed passenger is the driver's legal guardian, they only have to be 18 instead of 21.
     Implement the logic to return true if the person has a permit and is with a licensed passenger.
@@ -48,6 +47,7 @@ public class Exercise02_CanDrive {
     canDrive(false, true, 23, true) ➔ false
      */
     public boolean canDrive(boolean hasPermit, boolean withLicensedPassenger, int passengerAge, boolean isPassengerOurGuardian) {
-        return false;
+        return (hasPermit && withLicensedPassenger && ((isPassengerOurGuardian && passengerAge >= 18) || passengerAge >= 21));
     }
 }
+
