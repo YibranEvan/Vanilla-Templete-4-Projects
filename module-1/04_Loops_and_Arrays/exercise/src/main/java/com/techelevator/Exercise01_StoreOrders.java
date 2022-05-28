@@ -43,8 +43,8 @@ public class Exercise01_StoreOrders {
 	 createOrder() → [10, 40, 31, 41]
      */
     public int[] createOrder() {
-        return new int[4] {10, 40, 31, 41};
-        if
+        return new int[] {SMALL_CHEESE, CALZONE, LARGE_PEPPERONI, SPAGHETTI_PIE };
+
     }
 
     /*
@@ -58,8 +58,24 @@ public class Exercise01_StoreOrders {
     getCalzoneSales([30, 31, 10]) → 0
     getCalzoneSales([]) → 0
      */
+    //  new int orders = [40, 30, 31, 40, 10] this array length is 5
+    // is i less than 5
+    // orders[0] = 40
+    // orders[1] = 30
+    // orders[2] = 31
+    // orders[3] = 40
+    // orders[4] = 10
+    //
+    //
     public int getCalzoneSales(int[] orders) {
-        return 0;
+        int calzoneCount = 0;
+
+        for (int i = 0; i < orders.length; i++) {
+            if (orders [i] == 40) {
+                calzoneCount++;
+            }
+        }
+        return calzoneCount;
     }
 
     /*
