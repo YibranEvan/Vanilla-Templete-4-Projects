@@ -36,17 +36,16 @@ public class Exercise03_Shirts {
     buildBulkOrder(4) → ['S', 'M', 'L', 'S']
     buildBulkOrder(0) → []
      */
-    //// make 0== 'S'  , 1== 'M' , AND 2== 'L'
     public char[] buildBulkOrder(int numberOfShirts) {
-        char[]evenOrderShirts = new char[]numberOfShirts;
-        for (int i = 0; i < numberOfShirts.length; i++) {
-            if (numberOfShirts[i] = 'S') {
+        char[]evenOrderShirts = new char[] numberOfShirts;
+        for (int i = 0; i < evenOrderShirts.length; i++) {
+            if (numberOfShirts[i] =='S') {
                 evenOrderShirts++;
             }
-            if (numberOfShirts[i] = 'M') {
+            if (numberOfShirts[i] == 'M') {
                 evenOrderShirts++;
             }
-            if (numberOfShirts[i] = 'L') {
+            if (numberOfShirts[i] == 'L') {
                 evenOrderShirts++;
             }
             return evenOrderShirts;
