@@ -68,7 +68,26 @@ public class Exercise02_BoardingGate {
     getNumberOfFullRows([false, true, true, false, true, true]) → 0
      */
     public int getNumberOfFullRows(boolean[] seatingChart) {
-        return 0;
-    }
+        int fullRows = 0;
+        int streak = 0;
 
+        for (int i = 0; i < seatingChart.length; i++) {
+            if (i % 3 == 0) { //new row, start over
+                streak = 0;
+            }
+
+            if (seatingChart[i] == false) { //streak continues
+                streak++;
+            } else { //streak is over
+                streak = 0;
+            }
+
+            if (streak == 3) {
+                fullRows += 1;
+            }
+        }
+
+        return fullRows;
+
+    }
 }
