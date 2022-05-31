@@ -36,7 +36,9 @@ public class Exercise03_Shirts {
     buildBulkOrder(4) → ['S', 'M', 'L', 'S']
     buildBulkOrder(0) → []
      */
-    public char[] buildBulkOrder(int numberOfShirts) { 
+    //// make 0== 'S'  , 1== 'M' , AND 2== 'L'
+    public char[] buildBulkOrder(int numberOfShirts) {
+
         return new char[] {};    
     }
 
