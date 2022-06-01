@@ -71,11 +71,9 @@ public class Exercise05_Weather<maxTemp> {
 	fixTemperatures([]) → []
      */
     public int[] fixTemperatures(int[] temperatures) {
-        int[] fixTemps = new int[temperatures];
         for (int i = 0; i < temperatures.length; i+=2) {
-            if temperatures[i]+ 2;
+            temperatures[i]= temperatures[i] + 2;
+        }
             return temperatures;
         }
-        return fixTemps;
-    }
 }
