@@ -47,8 +47,10 @@ public class Exercise05_Weather {
 	hottestDay([55]) → 55
     */
     public int hottestDay(int[] dailyHighs) {
-        
-        return 0;
+        int maxTemp = 0;
+        for(int i =0; i < dailyHighs.length; i++)
+            if (dailyHighs[i]> maxTemp)
+        return ;
     }
 
     /*
