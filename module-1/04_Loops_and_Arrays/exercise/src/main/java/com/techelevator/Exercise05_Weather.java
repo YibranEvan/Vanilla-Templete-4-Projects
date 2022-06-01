@@ -1,6 +1,6 @@
 package com.techelevator;
 
-public class Exercise05_Weather {
+public class Exercise05_Weather<maxTemp> {
 
     private final static int FREEZING_TEMPERATURE = 32;
 
@@ -47,10 +47,13 @@ public class Exercise05_Weather {
 	hottestDay([55]) → 55
     */
     public int hottestDay(int[] dailyHighs) {
-        int maxTemp = 0;
-        for(int i =0; i < dailyHighs.length; i++)
-            if (dailyHighs[i]> maxTemp)
-        return ;
+        int maxTemp = dailyHighs[0];
+        for (int i = 0; i < dailyHighs.length; i++) {
+            if (dailyHighs[i] > maxTemp) {
+                maxTemp = dailyHighs[i];
+            }
+    }
+        return maxTemp;
     }
 
     /*
@@ -68,6 +71,11 @@ public class Exercise05_Weather {
 	fixTemperatures([]) → []
      */
     public int[] fixTemperatures(int[] temperatures) {
-        return new int[] {};
+        int[] fixTemps = new int[temperatures];
+        for (int i = 0; i < temperatures.length; i+=2) {
+            if temperatures[i]+ 2;
+            return temperatures;
+        }
+        return fixTemps;
     }
 }
