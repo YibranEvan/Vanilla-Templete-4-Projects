@@ -126,7 +126,8 @@ public class Exercises {
 	 nonStart("shotl", "java") → "hotlava"
 	 */
 	public String nonStart(String a, String b) {
-		return null;
+		String nonStart = new String ( a.substring(1) + b.substring(1));
+		return nonStart ;
 	}
 
 	/*
