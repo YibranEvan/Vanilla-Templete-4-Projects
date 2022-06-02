@@ -57,8 +57,10 @@ public class Exercises {
 	 extraEnd("Hi") → "HiHiHi"
 	 */
 	public String extraEnd(String str) {
-		return null;
+		String extraEnd = new String(str.substring(str.length() - 2) + str.substring(str.length() - 2) + str.substring(str.length() - 2));
+		return extraEnd;
 	}
+
 
 	/*
 	 Given a string, return the string made of its first two chars, so the String "Hello" yields "He". If the
@@ -69,8 +71,13 @@ public class Exercises {
 	 firstTwo("ab") → "ab"
 	 */
 	public String firstTwo(String str) {
-		return null;
+		if(str.length()<2) {
+			return str;
+		} else{
+			return str.substring(0,2);
+		}
 	}
+
 
 	/*
 	 Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
@@ -79,7 +86,10 @@ public class Exercises {
 	 firstHalf("abcdef") → "abc"
 	 */
 	public String firstHalf(String str) {
-		return null;
+		if() {
+			return str;
+		}
+
 	}
 
 	/*
