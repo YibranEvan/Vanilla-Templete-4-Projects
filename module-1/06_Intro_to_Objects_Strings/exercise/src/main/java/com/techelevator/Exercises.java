@@ -150,7 +150,7 @@ public class Exercises {
 	 right2("Hi") → "Hi"
 	 */
 	public String right2(String str) {
-		return null;
+		return str.substring(str.length() - 2) + str.substring( 0, str.length() -2);
 	}
 
 	/*
@@ -161,8 +161,16 @@ public class Exercises {
 	 theEnd("oh", true) → "o"
 	 */
 	public String theEnd(String str, boolean front) {
-		return null;
+		String fromFront = str.substring(str.length() - 1);
+		String fromBack = str.substring(0, 1);
+		if (front) {
+			return fromFront;
+	}else {
+			return fromBack;
+		}
+
 	}
+
 
 	/*
 	 Given a string, return a version without both the first and last char of the string. The string
@@ -172,7 +180,11 @@ public class Exercises {
 	 withoutEnd2("ab") → ""
 	 */
 	public String withoutEnd2(String str) {
-		return null;
+	//	String withoutEnd2 = new String (str.substring(1, str.length() - 1));
+	//	{
+			return null;
+	//	} if (str.substring(1, str.length() - 1)) )
+	//	}
 	}
 
 	/*
