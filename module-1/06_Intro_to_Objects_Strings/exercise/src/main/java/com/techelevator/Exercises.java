@@ -161,8 +161,8 @@ public class Exercises {
 	 theEnd("oh", true) → "o"
 	 */
 	public String theEnd(String str, boolean front) {
-		String fromFront = str.substring(str.length() - 1);
-		String fromBack = str.substring(0, 1);
+		String fromBack = str.substring(str.length() - 1);
+		String fromFront = str.substring(0, 1);
 		if (front) {
 			return fromFront;
 	}else {
@@ -180,12 +180,17 @@ public class Exercises {
 	 withoutEnd2("ab") → ""
 	 */
 	public String withoutEnd2(String str) {
-	//	String withoutEnd2 = new String (str.substring(1, str.length() - 1));
-	//	{
-			return null;
-	//	} if (str.substring(1, str.length() - 1)) )
-	//	}
+		if (str.length() <= 2) {
+			return "";
+	} else  {
+		String withoutEnd2 = str.substring(1, str.length() - 1);
+		return withoutEnd2;
 	}
+}
+
+
+
+
 
 	/*
 	 Given a string of even length, return a string made of the middle two chars, so the string "string"
