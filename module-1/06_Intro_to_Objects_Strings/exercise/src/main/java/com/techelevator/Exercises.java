@@ -138,7 +138,8 @@ public class Exercises {
 	 left2("Hi") → "Hi"
 	 */
 	public String left2(String str) {
-		return null;
+		String leftTwo = new String (str.substring(2) + str.substring(0,2));
+		return leftTwo;
 	}
 
 	/*
