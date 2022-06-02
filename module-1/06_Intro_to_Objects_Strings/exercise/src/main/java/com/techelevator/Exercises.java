@@ -190,8 +190,6 @@ public class Exercises {
 
 
 
-
-
 	/*
 	 Given a string of even length, return a string made of the middle two chars, so the string "string"
 	 yields "ri". The string length will be at least 2.
@@ -200,7 +198,11 @@ public class Exercises {
 	 middleTwo("Practice") → "ct"
 	 */
 	public String middleTwo(String str) {
-		return null;
+	//	String middleTwo = (str.substring((str.length() / 2)-1)), (str.length() / 2)-1));
+	//	return middleTwo;
+		int middleTwo = str.length() /2;
+
+		return str.substring(middleTwo -1, middleTwo +1);
 	}
 
 	/*
