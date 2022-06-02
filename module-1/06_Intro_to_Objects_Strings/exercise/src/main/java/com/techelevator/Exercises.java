@@ -9,7 +9,7 @@ public class Exercises {
 	 helloName("X") → "Hello X!"
 	 */
 	public String helloName(String name) {
-		String Hello = new String ("Hello " + name + "!");
+		String Hello = new String("Hello " + name + "!");
 		return Hello;
 	}
 
@@ -21,7 +21,7 @@ public class Exercises {
 	 makeAbba("What", "Up") → "WhatUpUpWhat"
 	 */
 	public String makeAbba(String a, String b) {
-		String makeAbba =  new String(a + b +b +a);
+		String makeAbba = new String(a + b + b + a);
 		return makeAbba;
 	}
 
@@ -34,7 +34,7 @@ public class Exercises {
 	 makeTags("cite", "Yay") → "<cite>Yay</cite>"
 	 */
 	public String makeTags(String tag, String word) {
-		return "<"+ tag + ">" + word + "</" + tag +  ">";
+		return "<" + tag + ">" + word + "</" + tag + ">";
 	}
 
 	/*
@@ -46,7 +46,7 @@ public class Exercises {
 	 makeOutWord("[[]]", "word") → "[[word]]"
 	 */
 	public String makeOutWord(String out, String word) {
-		return out.substring(0,2) +word+ out.substring(2,4);
+		return out.substring(0, 2) + word + out.substring(2, 4);
 	}
 
 	/*
@@ -71,10 +71,10 @@ public class Exercises {
 	 firstTwo("ab") → "ab"
 	 */
 	public String firstTwo(String str) {
-		if(str.length()<2) {
+		if (str.length() < 2) {
 			return str;
-		} else{
-			return str.substring(0,2);
+		} else {
+			return str.substring(0, 2);
 		}
 	}
 
@@ -86,9 +86,7 @@ public class Exercises {
 	 firstHalf("abcdef") → "abc"
 	 */
 	public String firstHalf(String str) {
-		if() {
-			return str;
-		}
+		return (str.substring(0, str.length() / 2));
 
 	}
 
@@ -100,7 +98,7 @@ public class Exercises {
 	 withoutEnd("coding") → "odin"
 	 */
 	public String withoutEnd(String str) {
-		return null;
+		return (str.substring(1, str.length() - 1));
 	}
 
 	/*
@@ -112,8 +110,13 @@ public class Exercises {
 	 comboString("aaa", "b") → "baaab"
 	 */
 	public String comboString(String a, String b) {
-		return null;
+		if (a.length() > b.length()) {
+		return (b + a + b);
+	} else {
+		return (a + b + a);
 	}
+
+}
 
 	/*
 	 Given 2 strings, return their concatenation, except omit the first char of each. The strings will
