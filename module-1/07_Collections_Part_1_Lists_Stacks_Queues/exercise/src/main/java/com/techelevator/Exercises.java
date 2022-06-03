@@ -76,8 +76,15 @@ public class Exercises {
 	 findLargest( [34070, 1380, 81238, 7782, 234, 64362, 627] ) -> 81238
 	 */
 	public Integer findLargest(List<Integer> integerList) {
-		return null;
+		int largeNumber = 0;
+		for (int deez: integerList) {
+			if (largeNumber < deez) {
+				largeNumber = deez;
+			}
+		}
+	return largeNumber;
 	}
+
 
 	/*
 	 Given an array of Integers, return a List of Integers containing just the odd values.
