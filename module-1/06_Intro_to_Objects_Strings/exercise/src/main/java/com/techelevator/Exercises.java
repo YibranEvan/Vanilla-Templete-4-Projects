@@ -198,8 +198,6 @@ public class Exercises {
 	 middleTwo("Practice") → "ct"
 	 */
 	public String middleTwo(String str) {
-	//	String middleTwo = (str.substring((str.length() / 2)-1)), (str.length() / 2)-1));
-	//	return middleTwo;
 		int middleTwo = str.length() /2;
 
 		return str.substring(middleTwo -1, middleTwo +1);
@@ -212,7 +210,12 @@ public class Exercises {
 	 endsLy("oddy") → false
 	 */
 	public boolean endsLy(String str) {
-		return false;
+		int endsLy = str.length();
+			if (endsLy < 2) {
+			return false;
+		} else{
+			return (str.substring(endsLy - 2).equals("ly"));
+		}
 	}
 
 	/*
@@ -223,7 +226,7 @@ public class Exercises {
 	 nTwice("Chocolate", 1) → "Ce"
 	 */
 	public String nTwice(String str, int n) {
-		return null;
+		return str.substring(0, n)+ str.substring(str.length() - n, str.length());
 	}
 
 	/*
@@ -235,7 +238,11 @@ public class Exercises {
 	 twoChar("java", 3) → "ja"
 	 */
 	public String twoChar(String str, int index) {
-		return null;
+		if (str.length() <= index + 1 || index < 0) {
+			return str.substring(0, 2);
+		} else {
+			return str.substring(index, index + 2);
+		}
 	}
 
 	/*
@@ -246,7 +253,9 @@ public class Exercises {
 	 middleThree("solving") → "lvi"
 	 */
 	public String middleThree(String str) {
-		return null;
+		int middleThree = str.length() /2;
+
+		return str.substring(middleThree -1, middleThree +2);
 	}
 
 	/*
@@ -258,8 +267,16 @@ public class Exercises {
 	 hasBad("xxbadxx") → false
 	 */
 	public boolean hasBad(String str) {
+		if (str.length() <3) {
 		return false;
-	}
+	} else if ((str.substring(0,3)).equals("bad")) {
+			return true;
+		} else if (str.length() > 3) {
+			if ((str.substring(1,4)).equals("bad"))
+				return true;
+		}
+		return false;
+		}
 
 	/*
 	 Given a string and a non-negative int n, return a larger string that is n copies of the original string.
@@ -268,7 +285,11 @@ public class Exercises {
 	 stringTimes("Hi", 1) → "Hi"
 	 */
 	public String stringTimes(String str, int n) {
-		return null;
+		String deezNuts = "";
+		for (int i = 0; i < n; i++) {
+			deezNuts += str;
+		}
+		return deezNuts;
 	}
 
 	/*
