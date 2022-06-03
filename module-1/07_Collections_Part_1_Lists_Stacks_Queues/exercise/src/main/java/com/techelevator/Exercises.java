@@ -93,7 +93,13 @@ public class Exercises {
 	 oddOnly( {734, 233, 782, 811, 3, 9999} ) -> [233, 811, 3, 9999]
 	 */
 	public List<Integer> oddOnly(Integer[] integerArray) {
-		return null;
+		List <Integer> oddOnly = new ArrayList<Integer>();
+		for (int oddNumber : integerArray) {
+			if (oddNumber % 2 != 0) {
+				oddOnly.add(oddNumber);
+			}
+		}
+		return oddOnly;
 	}
 
 	/*
