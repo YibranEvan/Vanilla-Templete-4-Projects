@@ -61,7 +61,12 @@ public class Exercises {
 	 arrayInt2ListDouble( {84, 99, 3285, 13, 877} ) -> [42, 49.5, 1642.5, 6.5, 438.5]
 	 */
 	public List<Double> arrayInt2ListDouble(int[] intArray) {
-		return null;
+		List<Double> doubleList = new ArrayList <Double>();
+		for (int numbers: intArray) {
+			doubleList.add(numbers/2.0);
+			}
+
+		return doubleList;
 	}
 
 	/*
