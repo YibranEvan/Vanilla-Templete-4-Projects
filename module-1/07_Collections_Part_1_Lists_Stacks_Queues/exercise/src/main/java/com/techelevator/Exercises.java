@@ -18,11 +18,11 @@ public class Exercises {
 	public List<String> array2List(String[] stringArray) {
 
 		List<String> array2List = new ArrayList<String>();
-		for (String fruitList: stringArray) {
+		for (String fruitList : stringArray) {
 			array2List.add(fruitList);
-			}
-			return array2List;
 		}
+		return array2List;
+	}
 
 
 	/*
@@ -32,7 +32,7 @@ public class Exercises {
 	 list2Array( ["Left", "Right", "Forward", "Back"] )  ->  {"Left", "Right", "Forward", "Back"}
 	 */
 	public String[] list2Array(List<String> stringList) {
-		String [] list2Array = stringList.toArray(String[]::new);
+		String[] list2Array = stringList.toArray(String[]::new);
 		return list2Array;
 	}
 
@@ -51,7 +51,7 @@ public class Exercises {
 
 			}
 		}
-			return no4LetterWords;
+		return no4LetterWords;
 	}
 
 	/*
@@ -61,10 +61,10 @@ public class Exercises {
 	 arrayInt2ListDouble( {84, 99, 3285, 13, 877} ) -> [42, 49.5, 1642.5, 6.5, 438.5]
 	 */
 	public List<Double> arrayInt2ListDouble(int[] intArray) {
-		List<Double> doubleList = new ArrayList <Double>();
-		for (int numbers: intArray) {
-			doubleList.add(numbers/2.0);
-			}
+		List<Double> doubleList = new ArrayList<Double>();
+		for (int numbers : intArray) {
+			doubleList.add(numbers / 2.0);
+		}
 
 		return doubleList;
 	}
@@ -77,12 +77,12 @@ public class Exercises {
 	 */
 	public Integer findLargest(List<Integer> integerList) {
 		int largeNumber = 0;
-		for (int deez: integerList) {
+		for (int deez : integerList) {
 			if (largeNumber < deez) {
 				largeNumber = deez;
 			}
 		}
-	return largeNumber;
+		return largeNumber;
 	}
 
 
@@ -93,7 +93,7 @@ public class Exercises {
 	 oddOnly( {734, 233, 782, 811, 3, 9999} ) -> [233, 811, 3, 9999]
 	 */
 	public List<Integer> oddOnly(Integer[] integerArray) {
-		List <Integer> oddOnly = new ArrayList<Integer>();
+		List<Integer> oddOnly = new ArrayList<Integer>();
 		for (int oddNumber : integerArray) {
 			if (oddNumber % 2 != 0) {
 				oddOnly.add(oddNumber);
@@ -137,12 +137,12 @@ public class Exercises {
 	 */
 	public List<String> fizzBuzzList(Integer[] integerArray) {
 		List<String> fizzBuzz = new ArrayList<String>();
-		for (Integer deez: integerArray){
-			if (deez % 3 == 0 && deez % 5 == 0){
+		for (Integer deez : integerArray) {
+			if (deez % 3 == 0 && deez % 5 == 0) {
 				fizzBuzz.add("FizzBuzz");
-			} else if (deez % 3 == 0){
+			} else if (deez % 3 == 0) {
 				fizzBuzz.add("Fizz");
-			} else if (deez % 5 == 0){
+			} else if (deez % 5 == 0) {
 				fizzBuzz.add("Buzz");
 			} else {
 				fizzBuzz.add(deez.toString());
@@ -160,7 +160,27 @@ public class Exercises {
 	 interleaveLists( [1, 2, 3], [4, 5, 6] )  ->  [1, 4, 2, 5, 3, 6]
 	 */
 	public List<Integer> interleaveLists(List<Integer> listOne, List<Integer> listTwo) {
-		return null;
-	}
 
+		int leaveLists = Math.min(listOne.size(), listTwo.size());
+		List<Integer> numberLists = new ArrayList<>();
+
+		for (int i = 0; i < leaveLists; i++) {
+			numberLists.add(listOne.get(i));
+			numberLists.add(listTwo.get(i));
+//			System.out.println(numberLists);
+		}
+
+
+		List<Integer> bigNumber = (listOne.size() > listTwo.size()) ? listOne : listTwo;
+//		System.out.println(bigNumber);
+
+
+		for (int i = leaveLists; i < bigNumber.size(); i++) {
+			numberLists.add(bigNumber.get(i));
+		}
+		System.out.println(numberLists);
+
+		return numberLists;
+	}
 }
+
