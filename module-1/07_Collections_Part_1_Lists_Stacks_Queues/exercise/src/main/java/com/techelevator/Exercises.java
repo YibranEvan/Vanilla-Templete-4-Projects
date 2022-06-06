@@ -136,7 +136,20 @@ public class Exercises {
 	HINT: To convert an Integer x to a String, you can use x.toString() in your code. For example, if x = 1, then x.toString() returns "1."
 	 */
 	public List<String> fizzBuzzList(Integer[] integerArray) {
-		return null;
+		List<String> fizzBuzz = new ArrayList<String>();
+		for (Integer deez: integerArray){
+			if (deez % 3 == 0 && deez % 5 == 0){
+				fizzBuzz.add("FizzBuzz");
+			} else if (deez % 3 == 0){
+				fizzBuzz.add("Fizz");
+			} else if (deez % 5 == 0){
+				fizzBuzz.add("Buzz");
+			} else {
+				fizzBuzz.add(deez.toString());
+			}
+		}
+
+		return fizzBuzz;
 	}
 
 	/*
