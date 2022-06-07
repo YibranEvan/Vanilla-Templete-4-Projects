@@ -151,10 +151,12 @@ public class Exercises {
 	 * beginningAndEnding(["muddy", "good", "moat", "good", "night"]) → {"g": "d", "m": "t", "n": "t"}
 	 */
 	public Map<String, String> beginningAndEnding(String[] words) {
-		Map<String, String> begginingLast = new HashMap<String, String>();
-		
+		Map<String, String> beginningEnd = new HashMap<>();
+		for (String strings: words ){
 
-		return null;
+			beginningEnd.put(strings.substring(0, 1), strings.substring(strings.length() - 1));
+		}
+			return beginningEnd;
 	}
 
 	/*
@@ -170,6 +172,7 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> wordCount(String[] words) {
+		
 		return null;
 	}
 
