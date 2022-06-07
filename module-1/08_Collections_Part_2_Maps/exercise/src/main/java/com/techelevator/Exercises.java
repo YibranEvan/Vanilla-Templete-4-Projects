@@ -122,7 +122,24 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> peterPaulPartnership(Map<String, Integer> peterPaul) {
-		return null;
+		int petersBalance = peterPaul.get("Peter");
+		int paulsBalance = peterPaul.get("Paul");
+		if (petersBalance >= 5000 && paulsBalance >= 10000) {
+			int a = petersBalance/4;
+			int b = paulsBalance/4;
+			int PeterPaulPartnership = a+b;
+			peterPaul.put("Peter", (petersBalance - a));
+			peterPaul.put("Paul", (paulsBalance - b));
+			peterPaul.put("PeterPaulPartnership", PeterPaulPartnership);
+
+		}
+		else {
+			peterPaul.put("Paul", (paulsBalance));
+			peterPaul.put("Peter", (petersBalance));
+		}
+
+		System.out.println(peterPaul);
+		return peterPaul;
 	}
 
 	/*
@@ -134,6 +151,9 @@ public class Exercises {
 	 * beginningAndEnding(["muddy", "good", "moat", "good", "night"]) → {"g": "d", "m": "t", "n": "t"}
 	 */
 	public Map<String, String> beginningAndEnding(String[] words) {
+		Map<String, String> begginingLast = new HashMap<String, String>();
+		
+
 		return null;
 	}
 
