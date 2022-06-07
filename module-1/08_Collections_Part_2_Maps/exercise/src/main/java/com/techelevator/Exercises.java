@@ -172,9 +172,23 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> wordCount(String[] words) {
-		
-		return null;
+		Map<String, Integer> wordCounter = new HashMap <String, Integer>();
+		if(words == null) {
+			return wordCounter;
+		} else {
+			for(String word : words){
+				if(wordCounter.containsKey(word)){
+					wordCounter.put(word, wordCounter.get(word) + 1);
+				} else {
+					wordCounter.put(word, 1);
+				}
+			}
+
+			return wordCounter;
+		}
+
 	}
+
 
 	/*
 	 * Given an array of int values, return a Map<Integer, Integer> with a key for each int, with the value the
