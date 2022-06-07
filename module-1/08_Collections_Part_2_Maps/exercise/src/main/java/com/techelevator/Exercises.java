@@ -202,7 +202,20 @@ public class Exercises {
 	 *
 	 */
 	public Map<Integer, Integer> integerCount(int[] ints) {
-		return null;
+		Map<Integer, Integer> integerCount = new HashMap<Integer, Integer>();
+		if(ints == null) {
+			return integerCount;
+		} else {
+			for(Integer ent : ints){
+				if(integerCount.containsKey(ent)){
+					integerCount.put(ent, integerCount.get(ent) + 1);
+				} else {
+					integerCount.put(ent, 1);
+				}
+			}
+			return integerCount;
+		}
+
 	}
 
 	/*
