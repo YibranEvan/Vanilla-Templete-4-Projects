@@ -75,8 +75,20 @@ public class Exercises {
 	 * isItOnSale("dungeon9999") → 0.00
 	 *
 	 */
+	// Make an UPPER CASE STATEMENT
 	public double isItOnSale(String itemNumber) {
-		return -1.0;
+		Map <String, Double> itemList = new HashMap <String, Double>();
+		itemList.put("KITCHEN4001", 0.20);
+		itemList.put("GARAGE1070", 0.15);
+		itemList.put("LIVINGROOM", 0.10);
+		itemList.put("KITCHEN6073", 0.40);
+		itemList.put("BEDROOM3434", 0.60);
+		itemList.put("BATH0073", 0.15);
+
+		if (itemNumber != null && itemList.containsKey(itemNumber.toUpperCase())) {
+			return itemList.get(itemNumber.toUpperCase());
+		}
+		return 0.0;
 	}
 
 	/*
