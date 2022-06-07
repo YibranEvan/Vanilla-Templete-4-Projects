@@ -102,7 +102,14 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> robPeterToPayPaul(Map<String, Integer> peterPaul) {
-		return null;
+		int petersMoney=peterPaul.get("Peter");
+		int paulsMoney=peterPaul.get("Paul");
+		if (petersMoney > 0 && paulsMoney < 1000) {
+			int borrowedMoney = petersMoney / 2;
+			peterPaul.put("Paul", paulsMoney + borrowedMoney);
+			peterPaul.put("Peter", petersMoney - borrowedMoney);
+		}
+		return peterPaul;
 	}
 
 	/*
