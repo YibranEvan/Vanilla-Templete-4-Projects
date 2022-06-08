@@ -281,15 +281,22 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> last2Revisited(String[] words) {
-		Map<String, Integer> lastTwo = new HashMap<>();
-			for (String deez: words) {
-			if (words.length <= 2) {
-				lastTwo.put();
+		Map<String, Integer> results = new HashMap<>();
+		for (String deez : words) {
+			int counter = 0;
+			String lastTwoChar = deez.substring(deez.length() - 2);
 
+			for (int i = 0; i < deez.length() - 2; i++) {
+				//code here
+				if (deez.substring(i, i + 2).equals(lastTwoChar)) {
+					counter++;
+				}
 			}
+			results.put(deez, counter);
 		}
-		return lastTwo;
+		return results;
 	}
+}
 
 
 
