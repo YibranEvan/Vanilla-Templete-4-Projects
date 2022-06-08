@@ -284,11 +284,16 @@ public class Exercises {
 		Map<String, Integer> lastTwo = new HashMap<>();
 			for (String deez: words) {
 			if (words.length <= 2) {
-				lastTwo.put(deez, 0);
-				lastTwo.put(deez +1, 0);
+				lastTwo.put();
+
 			}
 		}
-		return null;
+		return lastTwo;
 	}
+
+
+
+
+
 
 
