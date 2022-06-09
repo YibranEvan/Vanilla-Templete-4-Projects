@@ -17,4 +17,5 @@ public class FruitTree {
         this.typeOfFruit = typeOfFruit;
         this.piecesOfFruitLeft = piecesOfFruitLeft;
     }
+
 }

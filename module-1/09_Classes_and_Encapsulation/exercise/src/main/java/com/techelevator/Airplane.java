@@ -31,4 +31,9 @@ public class Airplane {
     public int getAvailableCoachSeats() {
         return availableCoachSeats;
     }
+    public Airplane (String planeNumber, int totalFirstClassSeats, int totalCoachSeats) {
+        this.planeNumber = planeNumber;
+        this.totalFirstClassSeats = totalFirstClassSeats;
+        this.totalCoachSeats = totalCoachSeats;
+    }
 }

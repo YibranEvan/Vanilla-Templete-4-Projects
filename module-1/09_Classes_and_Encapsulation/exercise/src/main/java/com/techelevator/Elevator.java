@@ -15,5 +15,5 @@ public class Elevator {
     public boolean isDoorOpen() {
         return doorOpen;
     }
-
+//public Elevator (int  {
 }

@@ -11,16 +11,13 @@ public class Employee {
     public int getEmployeeId() {
         return employeeId;
     }
-    public void setEmployeeId() {
-        this.employeeId = employeeId;
-    }
     public String getFirstName() {
         return firstName;
     }
     public String getLastName() {
         return lastName;
     }
-    public void setLastName() {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
     public String getFullName() {
@@ -29,7 +26,7 @@ public class Employee {
     public String getDepartment() {
         return department;
     }
-    public void setDepartment() {
+    public void setDepartment(String department) {
         this.department = department;
     }
     public double getAnnualSalary() {
