@@ -35,5 +35,10 @@ public class Employee {
     public double getAnnualSalary() {
         return annualSalary;
     }
-
+    public Employee (int employeeId, String firstName, String lastName, double annualSalary) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.annualSalary = annualSalary;
+    }
 }

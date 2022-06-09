@@ -11,7 +11,7 @@ public class HomeworkAssignment {
     public int getEarnedMarks() {
         return earnedMarks;
     }
-    public void setEarnedMarks() {
+    public void setEarnedMarks(int earnedMarks) {
         this.earnedMarks = earnedMarks;
     }
     public int getPossibleMarks() {
@@ -25,7 +25,10 @@ public class HomeworkAssignment {
         return letterGrade;
     }
     // Step Five: Test the Homework constructor
-
+public HomeworkAssignment(int possibleMarks , String submitterName) {
+    this.possibleMarks = possibleMarks;
+    this.submitterName = submitterName;
+    }
 
 
 

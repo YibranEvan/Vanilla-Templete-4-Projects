@@ -11,4 +11,10 @@ public class FruitTree {
     public int getPiecesOfFruitLeft() {
         return piecesOfFruitLeft;
     }
+
+    // Constructor
+    public FruitTree(String typeOfFruit, int piecesOfFruitLeft) {
+        this.typeOfFruit = typeOfFruit;
+        this.piecesOfFruitLeft = piecesOfFruitLeft;
+    }
 }
