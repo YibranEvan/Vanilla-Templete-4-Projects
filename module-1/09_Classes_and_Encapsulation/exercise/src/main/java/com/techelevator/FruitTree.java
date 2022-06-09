@@ -4,9 +4,9 @@ public class FruitTree {
     private String typeOfFruit;
     private int piecesOfFruitLeft;
 
-    public FruitTree(String typeOfFruit, int piecesOfFruitLeft) {
+    public FruitTree(String typeOfFruit, int startingpiecesOfFruitLeft) {
         this.typeOfFruit = typeOfFruit;
-        this.piecesOfFruitLeft = piecesOfFruitLeft;
+        this.piecesOfFruitLeft = startingpiecesOfFruitLeft;
     }
 
     // Setters and getters
@@ -19,6 +19,7 @@ public class FruitTree {
     public boolean pickFruit(int numberOfPiecesToRemove) {
         if (piecesOfFruitLeft >= numberOfPiecesToRemove) {
             piecesOfFruitLeft -= numberOfPiecesToRemove;
+         // Simplified version   piecesOfFruitLeft = piecesOfFruitLeft - numberOfPiecesToRemove;
             return true;
         } else {
             return false;

@@ -35,5 +35,6 @@ public class Airplane {
         this.planeNumber = planeNumber;
         this.totalFirstClassSeats = totalFirstClassSeats;
         this.totalCoachSeats = totalCoachSeats;
+
     }
 }
