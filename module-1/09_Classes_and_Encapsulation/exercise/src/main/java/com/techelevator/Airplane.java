@@ -45,14 +45,14 @@ public class Airplane {
 
     public boolean reserveSeats(boolean forFirstClass, int totalNumberOfSeats) {
         if (forFirstClass == true) {
-            if (totalFirstClassSeats - bookedFirstClassSeats >= totalNumberOfSeats) {
+            if (getAvailableFirstClassSeats() >= totalNumberOfSeats) {
                 bookedFirstClassSeats += totalNumberOfSeats;
                 return true;
             } else {
                 return false;
             }
         } else {
-            if (totalCoachSeats - bookedCoachSeats >= totalNumberOfSeats) {
+            if (getAvailableCoachSeats() >= totalNumberOfSeats) {
                 bookedCoachSeats += totalNumberOfSeats;
                 return true;
             } else {
