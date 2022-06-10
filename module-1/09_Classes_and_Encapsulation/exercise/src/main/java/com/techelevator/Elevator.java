@@ -4,6 +4,12 @@ public class Elevator {
     private int currentFloor;
     private int numberOfFloors;
     private boolean doorOpen;
+    String numberOfLevels;
+
+
+   /// public Elevator (int numberOfLevels) {
+     //   this.numberOfLevels = numberOfLevels;
+   // }
 
     //getters and setters
     public int getCurrentFloor() {
