@@ -21,8 +21,7 @@ public class Television {
     }
     public void turnOn() {
         isOn =true;
-        currentChannel = 3;
-        currentVolume =2;
+
     }
     public void changeChannel(int newChannel) {
         if (isOn == true &&  newChannel >=3 && newChannel <=18) {
