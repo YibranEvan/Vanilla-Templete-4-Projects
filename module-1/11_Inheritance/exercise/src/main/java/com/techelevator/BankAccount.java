@@ -20,12 +20,15 @@ public class BankAccount {
     }
 // getters
     public String getAccountHolderName() {
+
         return accountHolderName;
     }
     public String getAccountNumber(){
+
         return accountNumber;
     }
     public int getBalance(){
+
         return balance;
     }
     public int deposit(int amountToDeposit) {
