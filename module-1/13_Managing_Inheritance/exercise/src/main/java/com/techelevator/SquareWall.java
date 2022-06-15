@@ -9,10 +9,6 @@ public class SquareWall extends RectangleWall {
     public SquareWall (String name, String color, int sideLength) {
         super(name, color, sideLength, sideLength);
     }
-
-    public int getSideLength() {
-        return sideLength;
-    }
     public String toString() {
         return name + " ("+sideLength+"x"+sideLength+") square";
     }
