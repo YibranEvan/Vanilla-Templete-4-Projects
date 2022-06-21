@@ -1,6 +1,7 @@
 package com.techelevator;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class WordSearch {
@@ -24,20 +25,21 @@ public class WordSearch {
 			while (fileInput.hasNextLine()) {
 				String lineOfInput = fileInput.nextLine();
 				i++;
-
-				if (lineOfInput.contains(dataFile)) {
-					System.out.println(i + ") " + lineOfInput);
+				if (caseSensitive.equals("Y")) {
+					if (lineOfInput.contains(dataFile)) {
+						System.out.println(i + ") " + lineOfInput);
+					}
+				} else {
+					if (lineOfInput.toLowerCase().contains(dataFile.toLowerCase())) {
+						System.out.println(i + ") " + lineOfInput);
+					}
 				}
 			}
+		}
+		catch(FileNotFoundException e){
+					System.out.println("The file was not found: " + fileName);
+				}
 
+			}
 
 		}
-		catch (FileNotFoundException e) {
-			// Could not find the file at the specified path
-			System.out.println("The file was not found: " + fileName);
-
-		}
-
-	}
-
-}
