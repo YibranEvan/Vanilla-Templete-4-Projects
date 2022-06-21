@@ -6,8 +6,37 @@ import java.util.Scanner;
 public class WordSearch {
 
 	public static void main(String[] args) {
-		File deez = new File("alices_adventures_in_wonderland.txt");
-		Scanner dataInput = new Scanner("alices_adventures_in_wonderland.txt");
+		Scanner userInput = new Scanner(System.in);
+
+		System.out.print("What is the fully qualified name of the file that should be searched?");
+		String fileName = userInput.nextLine();
+
+		System.out.print("What is the search word you are looking for?");
+		String dataFile = userInput.nextLine();
+
+		System.out.print("Should the search be case sensitive? (Y/N)");
+		String caseSensitive = userInput.nextLine();
+
+		File file = new File(fileName);
+		int i = 0;
+
+		try (Scanner fileInput = new Scanner(file)) {
+			while (fileInput.hasNextLine()) {
+				String lineOfInput = fileInput.nextLine();
+				i++;
+
+				if (lineOfInput.contains(dataFile)) {
+					System.out.println(i + ") " + lineOfInput);
+				}
+			}
+
+
+		}
+		catch (FileNotFoundException e) {
+			// Could not find the file at the specified path
+			System.out.println("The file was not found: " + fileName);
+
+		}
 
 	}
 
