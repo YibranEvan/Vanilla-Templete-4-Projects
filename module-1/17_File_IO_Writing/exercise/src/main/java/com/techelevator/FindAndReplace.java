@@ -8,10 +8,10 @@ public class FindAndReplace {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
 
-        System.out.print("What is the replacement word?");
+        System.out.print("What is the search word?");
         String searchWord = userInput.nextLine();
 
-        System.out.print("What is the search word you are looking for?");
+        System.out.print("What is the replacement word?");
         String wordReplace = userInput.nextLine();
 
         System.out.print("What is the source file?");
@@ -29,8 +29,9 @@ public class FindAndReplace {
                 String lineOfInput = fileInput.nextLine();
                 dataOutput.println(lineOfInput.replaceAll(searchWord, wordReplace));
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("The file " + srcFile + "Was not found, please try again");
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("The file " + srcFile + " Was not found, please try again");
         }
     }
 }
