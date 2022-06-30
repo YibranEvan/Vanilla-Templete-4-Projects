@@ -5,7 +5,7 @@ INSERT INTO genre (genre_name)
 VALUES ('Sports');
 
 INSERT INTO movie_genre(movie_id, genre_id)
-VALUES(7214, 11773);
+VALUES(7214, 11771);
 
 
 
