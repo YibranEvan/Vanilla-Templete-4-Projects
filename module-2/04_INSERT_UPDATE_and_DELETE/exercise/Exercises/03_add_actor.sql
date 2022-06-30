@@ -4,9 +4,7 @@
 INSERT INTO movie_actor(movie_id, actor_id)
 VALUES(105, 7036)
 
-SELECT * 
-FROM movie_actor
-WHERE movie_id = 105
+
 
 
 

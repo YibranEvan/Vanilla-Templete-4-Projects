@@ -5,8 +5,5 @@ UPDATE movie
 SET title = 'Star Wars: A New Hope'
 WHERE title = 'Star Wars'
 
-SELECT title
-FROM movie
-WHERE title LIKE 'Star Wars%'
-ORDER BY title
+
 

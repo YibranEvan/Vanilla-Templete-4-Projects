@@ -6,7 +6,5 @@ SET overview = CONCAT(overview, ' This is a long movie.')
 WHERE length_minutes >210
 
 
-SELECT title, overview
-FROM movie
-WHERE length_minutes >210
+
 

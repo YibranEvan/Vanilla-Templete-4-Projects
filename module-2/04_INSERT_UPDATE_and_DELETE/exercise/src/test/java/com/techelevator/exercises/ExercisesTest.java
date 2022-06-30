@@ -365,7 +365,7 @@ public class ExercisesTest {
 		String port = System.getenv("DB_PORT") != null ? System.getenv("DB_PORT") : "5432";
 		String dbName = System.getenv("DB_DATABASE") != null ? System.getenv("DB_DATABASE") : defaultDbName;
 		String username = System.getenv("DB_USERNAME") != null ? System.getenv("DB_USERNAME") : "postgres";
-		String password = System.getenv("DB_PASSWORD") != null ? System.getenv("DB_PASSWORD") : "postgres1";
+		String password = System.getenv("DB_PASSWORD") != null ? System.getenv("DB_PASSWORD") : "punchcode";
 
 		String url = String.format("jdbc:postgresql://%s:%s/%s", host, port, dbName);
 

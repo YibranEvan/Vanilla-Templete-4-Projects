@@ -7,8 +7,9 @@ VALUES ('Sports');
 INSERT INTO movie_genre(movie_id, genre_id)
 VALUES(7214, 11773);
 
-SELECT * 
-FROM movie_genre
-WHERE movie_id = 7214
+
+
+
+
 
 
