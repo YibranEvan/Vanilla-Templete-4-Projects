@@ -29,13 +29,14 @@ public class JdbcTimesheetDao implements TimesheetDao {
         return timesheet;
     }
 
+
     @Override
     public List<Timesheet> getTimesheetsByEmployeeId(int employeeId) {
         List<Timesheet> timesheets = new ArrayList<>();
         String sql = "SELECT timesheet_id, employee_id, project_id, date_worked, hours_worked, billable, description " +
-                     "FROM timesheet " +
-                     "WHERE employee_id = ? " +
-                     "ORDER BY timesheet_id;";
+                "FROM timesheet " +
+                "WHERE employee_id = ? " +
+                "ORDER BY timesheet_id;";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, employeeId);
         if (results.next()) {
             Timesheet timesheet = mapRowToTimesheet(results);
@@ -44,13 +45,14 @@ public class JdbcTimesheetDao implements TimesheetDao {
         return timesheets;
     }
 
+
     @Override
     public List<Timesheet> getTimesheetsByProjectId(int projectId) {
         List<Timesheet> timesheets = new ArrayList<>();
         String sql = "SELECT timesheet_id, employee_id, project_id, date_worked, hours_worked, billable, description " +
-                     "FROM timesheet " +
-                     "WHERE employee_id = ? " +
-                     "ORDER BY timesheet_id;";
+                "FROM timesheet " +
+                "WHERE employee_id = ? " +
+                "ORDER BY timesheet_id;";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, projectId);
         while (results.next()) {
             Timesheet timesheet = mapRowToTimesheet(results);
