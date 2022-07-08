@@ -28,7 +28,6 @@ public class JdbcTimesheetDaoTests extends BaseDaoTests {
     public void setup() {
         sut = new JdbcTimesheetDao(dataSource);
         testTimesheet = new Timesheet(5, 1, 2, LocalDate.parse("2021-02-02"), 2.0, true, "test");
-
     }
 
     @Test
@@ -66,9 +65,12 @@ public class JdbcTimesheetDaoTests extends BaseDaoTests {
 
         timesheet = sut.getTimesheetsByEmployeeId(2);
         Assert.assertEquals(1, timesheet.size());
+        assertTimesheetsMatch(TIMESHEET_3, timesheet.get(0));
+
 
         timesheet = sut.getTimesheetsByEmployeeId(3);
         Assert.assertEquals(0, timesheet.size());
+
 
     }
 
@@ -76,15 +78,18 @@ public class JdbcTimesheetDaoTests extends BaseDaoTests {
     public void getTimesheetsByProjectId_returns_list_of_all_timesheets_for_project() {
         List<Timesheet> timesheets = sut.getTimesheetsByProjectId(2);
         Assert.assertEquals(2, timesheets.size());
+        assertTimesheetsMatch(TIMESHEET_3, timesheets.get(0));
 
 
         timesheets = sut.getTimesheetsByProjectId(1);
         Assert.assertEquals(2, timesheets.size());
+        assertTimesheetsMatch(TIMESHEET_1, timesheets.get(0));
+
 
         timesheets = sut.getTimesheetsByProjectId(3);
         Assert.assertEquals(0, timesheets.size());
-
     }
+
 
     @Test
     public void createTimesheet_returns_timesheet_with_id_and_expected_values() {
@@ -103,7 +108,7 @@ public class JdbcTimesheetDaoTests extends BaseDaoTests {
     public void created_timesheet_has_expected_values_when_retrieved() {
         Timesheet createdTimesheet = sut.createTimesheet(testTimesheet);
 
-        Assert.assertNotNull("can't test if created project has correct values until createProject is working", createdTimesheet);
+        Assert.assertNotNull("can't testTimesheet if created project has correct values until createTimesheet is working", createdTimesheet);
 
         Integer newId = createdTimesheet.getTimesheetId();
         Timesheet retrievedTimesheet = sut.getTimesheet(newId);
@@ -141,6 +146,7 @@ public class JdbcTimesheetDaoTests extends BaseDaoTests {
 
         billableHours = sut.getBillableHours(2, 1);
         Assert.assertEquals(0.25, billableHours, 0.001);
+
     }
 
     private void assertTimesheetsMatch(Timesheet expected, Timesheet actual) {
