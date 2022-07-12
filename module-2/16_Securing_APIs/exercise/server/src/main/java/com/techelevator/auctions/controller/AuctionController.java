@@ -68,9 +68,8 @@ public class AuctionController {
     }
 
     @RequestMapping(path = "/whoami")
-    public String whoAmI() {
-
-        return whoAmI();
+    public String whoAmI(Principal principal) {
+        return principal.getName();
     }
 
 }
