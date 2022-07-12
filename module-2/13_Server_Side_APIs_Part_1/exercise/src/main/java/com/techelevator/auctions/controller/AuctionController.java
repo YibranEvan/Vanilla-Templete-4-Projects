@@ -19,18 +19,18 @@ public class AuctionController {
     public AuctionController() {
         this.dao = new MemoryAuctionDao();
     }
-
     @RequestMapping(method = RequestMethod.GET)
     public List<Auction> list() {
         return dao.list();
     }
 
-@RequestMapping(path = "/{?}", method = RequestMethod.GET)
-public Auction get(int id) {
-    if (Auction = id) {
-        return dao.get(id);
-    }
-    return null;
+@RequestMapping(path = "/{id}", method = RequestMethod.GET)
+public Auction get(@PathVariable int id) {
+    return dao.get(id);
+}
+    @RequestMapping(method = RequestMethod.POST)
+public Auction create(@RequestBody Auction auction){
+        return dao.create(auction);
     }
 }
 
