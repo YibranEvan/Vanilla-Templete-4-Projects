@@ -15,14 +15,16 @@ public class AuctionController {
 
     private AuctionDao dao;
 
-
     public AuctionController() {
         this.dao = new MemoryAuctionDao();
     }
     @RequestMapping(method = RequestMethod.GET)
-    public List<Auction> list() {
-        return dao.list();
-    }
+    public List<Auction> list(@RequestParam (defaultValue = "") String title_like) {
+            if (title_like != null) {
+                return dao.searchByTitle(title_like);
+            }
+            return null;
+        }
 
 @RequestMapping(path = "/{id}", method = RequestMethod.GET)
 public Auction get(@PathVariable int id) {
@@ -32,5 +34,6 @@ public Auction get(@PathVariable int id) {
 public Auction create(@RequestBody Auction auction){
         return dao.create(auction);
     }
+    
 }
 
