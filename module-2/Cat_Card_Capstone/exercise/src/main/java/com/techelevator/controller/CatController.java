@@ -16,7 +16,7 @@ import com.techelevator.services.CatPicService;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
-@RequestMapping ("/cards")
+@RequestMapping ("/api/cards")
 public class CatController {
 
     private CatCardDao catCardDao;
@@ -32,6 +32,8 @@ public class CatController {
     public List<CatCard> list() {
         return catCardDao.list();
     }
+
+    // gets a cat by id
     @RequestMapping (path = "/{id}", method = RequestMethod.GET)
     public CatCard get(@PathVariable int id) throws CatCardNotFoundException {
         return catCardDao.get(id);
@@ -50,6 +52,7 @@ public class CatController {
     public void save(@RequestBody CatCard catCard) {
         catCardDao.save(catCard);
     }
+
     @RequestMapping (path = "{/id}", method = RequestMethod.PUT)
     public void update(@Valid @RequestBody CatCard card, @PathVariable long id) throws CatCardNotFoundException {
         catCardDao.update(id, card);
