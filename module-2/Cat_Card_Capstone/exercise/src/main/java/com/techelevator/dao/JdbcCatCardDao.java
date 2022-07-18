@@ -78,6 +78,6 @@ public class JdbcCatCardDao implements CatCardDao {
 		cc.setImgUrl(rs.getString("img_url"));
 		cc.setCaption(rs.getString("caption"));
 		return cc;
-	};
+	}
 
 }
