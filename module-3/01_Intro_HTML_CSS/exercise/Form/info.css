@@ -14,7 +14,7 @@ label {
     margin:100;
     vertical-align: bottom;
     position: relative;
-    *overflow: hidden;
+    overflow: hidden;
     line-height: 200%;
   }
 
