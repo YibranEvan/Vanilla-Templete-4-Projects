@@ -4,10 +4,12 @@
 }
 
 html {
+
     font-size: 16px;
 }
 
 body {
+    display:grid;
     margin-left: 7%;
     margin-right: 7%;
     background-color: rgba(192, 192, 192, 0.1);
@@ -49,4 +51,13 @@ header img {
 
 #student-picture img{
     border-radius: 50%;
+}
+
+#main-grid {
+    display: grid;
+
+}
+
+#experience-grid {
+    display:grid
 }
