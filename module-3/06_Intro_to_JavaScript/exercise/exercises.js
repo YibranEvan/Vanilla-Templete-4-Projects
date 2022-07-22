@@ -94,7 +94,15 @@ function oddOnly(array) {
 		frontAgain("edit") → false
 		frontAgain("ed") → true
 */
-
+function frontAgain (word){
+	var First = word.substring (0, 2);
+	var Last = word.substring(word.length -2);
+	if (First == Last) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /*
 7. **cigarParty** When squirrels get together for a party, they like to have cigars. 
@@ -187,17 +195,14 @@ parameter, `x` passed in.
 	filterMultiplesOfX([3, 5, 1, 9, 18, 21, 42, 67], 3) → [3, 9, 18, 21, 42]
 	filterMultiplesOfX([3, 5, 10, 20, 18, 21, 42, 67], 5) → [5, 10, 20]
 */
-function filterMultiplesOfX (number) {
-	for (var i = 0; i < number.length ; i++) {
-		if (number[i]% 3==0) {
-			number.push(number[i]);
-		} else {
-			if (number[i]%5==0) {
-				number.push(number[i]);
-			}
+function filterMultiplesOfX (array, number) {
+	var empty = [];
+	for (var i = 0; i < array.length; i++) {
+		if (array[i]% number==0) {
+			empty.push(array[i]);
 		}
 	}
-	return number;
+	return empty;
 }
 
 
@@ -213,3 +218,17 @@ firstName, lastName, and age. Populate the properties with your values.
 		age
 	}
 */
+
+function createObject(){
+
+	const object =  {
+		firstName: 'Yibran',
+		lastName: 'Evangelista', 
+		age: 24,
+	};
+	
+	return object;
+
+}
+
+
