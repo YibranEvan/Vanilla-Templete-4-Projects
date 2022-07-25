@@ -220,15 +220,12 @@ firstName, lastName, and age. Populate the properties with your values.
 */
 
 function createObject(){
-
 	const object =  {
 		firstName: 'Yibran',
 		lastName: 'Evangelista', 
 		age: 24,
 	};
-	
 	return object;
-
 }
 
 
