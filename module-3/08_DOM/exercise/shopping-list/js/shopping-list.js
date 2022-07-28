@@ -23,7 +23,7 @@ function setPageTitle() {
     shoppingList.insertAdjacentElement('beforeend', newItem)
   });
 }
-function addItem(parent, item) {
+function addItem(parent) {
   const aGrocery = document.createElement('p');
   groceries.forEach((anItem) => {
     aGrocery.innerText += " " + anItem;
