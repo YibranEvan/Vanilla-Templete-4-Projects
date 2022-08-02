@@ -1,17 +1,17 @@
 <template>
   <div>
     <form v-on:submit.prevent="addNewBook" >
-      <div class=".new-book-form">
-        <label for=".title-input">Title:</label>
-        <input id=".title-input" type="text" v-model="newBook.title" />
+      <div class="new-book-form">
+        <label for="title-input">Title:</label>
+        <input class="title-input" type="text" v-model="newBook.title" />
       </div>
-      <div class=".new-book-form">
-        <label for=".author-input">Author:</label>
-        <input id=".author-input" type="text" v-model="newBook.author" />
+      <div class="new-book-form">
+        <label for="author-input">Author:</label>
+        <input class="author-input" type="text" v-model="newBook.author" />
       </div>
-      <div class=".new-book-form">
-        <label for=".isbn-input">ISBN:</label>
-        <input id=".isbn-input" type="text" v-model="newBook.isbn" />
+      <div class="new-book-form">
+        <label for="isbn-input">ISBN:</label>
+        <input class="isbn-input" type="text" v-model="newBook.isbn" />
       </div>
       <input type="submit" value="Save" />
       <input type="button" value="Cancel" v-on:click.prevent="resetForm" />
