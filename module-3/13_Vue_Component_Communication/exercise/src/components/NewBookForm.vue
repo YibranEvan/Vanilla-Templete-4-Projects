@@ -1,19 +1,6 @@
 <template>
   <div>
-    <a
-      id="show-form-button"
-      href="#"
-      v-if="showForm === false"
-      v-on:click.prevent="showForm = true"
-    >Show Form</a>
-    <a
-      id="hide-form-button"
-      href="#"
-      v-if="showForm === true"
-      v-on:click.prevent="showForm = false"
-    >Hide Form</a>
-
-    <form v-on:submit.prevent="addNewBook" v-if="showForm === true">
+    <form v-on:submit.prevent="addNewBook" >
       <div class=".new-book-form">
         <label for=".title-input">Title:</label>
         <input id=".title-input" type="text" v-model="newBook.title" />
