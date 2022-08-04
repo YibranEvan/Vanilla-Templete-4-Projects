@@ -29,7 +29,6 @@ export default {
                 read: false,
                 isbn: ''
             };
-            this.$router.push({name: 'myBooks'});
         }
     }
 }
