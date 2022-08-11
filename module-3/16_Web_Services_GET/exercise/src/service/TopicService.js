@@ -5,11 +5,11 @@ const http = axios.create({
 })
 
 export default {
-    getTopics() {
+    list() {
         return http.get('/topics');
     },
 
-    getTopicsDetails(id) {
+    get(id) {
         return http.get(`/topics/${ id }`);
     }
 }
